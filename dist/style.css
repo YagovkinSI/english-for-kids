@@ -1,0 +1,54 @@
+.invisible {
+  display: none;
+}
+
+html {
+  font-size: 10px;
+  color: #2f2929;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.header {
+  display: fixed;
+  background-color: #e6adcd;
+}
+
+.header_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sidebar {
+  background-color: #984f87;
+}
+
+.main {
+  background-color: #fdf3f4;
+}
+
+.humburger {
+  justify-self: start;
+  align-self: center;
+}
+
+.logo {
+  align-self: center;
+  justify-self: center;
+  text-transform: uppercase;
+  color: #6a3563;
+}
+
+.switch-mode {
+  justify-self: end;
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */
