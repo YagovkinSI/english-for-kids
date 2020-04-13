@@ -1,12 +1,16 @@
+@import "base/normalize";
+@import "abstract/mixins";
 @import "abstract/constants";
 @import "abstract/invisible";
+@import "abstract/placeholders";
 @import "base/base";
+@import "base/hamburger";
 @import "layout/wrapper";
 @import "layout/header";
 @import "layout/sidebar";
 @import "layout/main";
 
 // Components
-@import "components/humburger";
 @import "components/logo";
 @import "components/switch-mode";
+@import "components/category-card";

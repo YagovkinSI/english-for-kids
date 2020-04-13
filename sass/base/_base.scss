@@ -1,8 +1,8 @@
 html {
-    font-size: 10px;  
+    @include font(10px);
     color: $color-text-main;  
 }
 
 body {
-    font-size: 2.0rem;
+    @include font(2.0rem);
 }

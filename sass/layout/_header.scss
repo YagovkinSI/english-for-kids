@@ -3,7 +3,16 @@
     background-color: $color-main;
 }
 
-.header_grid {
+.header__grid {
+    padding: 0 20px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header__menu {
+    justify-self: start;
+    align-self: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
 }
