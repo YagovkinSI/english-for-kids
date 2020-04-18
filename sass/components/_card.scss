@@ -1,10 +1,11 @@
-.category-card {
+.card {
     position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
 }
 
-.category-card__title {
+.card__title {
     position: absolute;
-    bottom: 10px;
     text-align: center;
     width: 100%;    
 }

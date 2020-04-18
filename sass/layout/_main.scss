@@ -12,8 +12,8 @@
 }
 
 .main__item {
+    perspective: 1000;
     margin: 20px;
-    background-color: $color-second;
     &::before {
         content: "";
         float: left;

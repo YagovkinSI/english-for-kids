@@ -379,6 +379,25 @@ template {
     left: 0;
   }
 }
+.flip {
+  background-color: #984f87;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.flip_front {
+  z-index: 20;
+}
+
+.flip_back {
+  transform: rotateY(180deg);
+}
+
+.fliping {
+  transform: rotateY(180deg);
+}
+
 html {
   font-size: 10px;
   line-height: 12px;
@@ -504,8 +523,8 @@ body {
 }
 
 .main__item {
+  perspective: 1000;
   margin: 20px;
-  background-color: #984f87;
 }
 .main__item::before {
   content: "";
@@ -529,13 +548,14 @@ body {
   align-self: center;
 }
 
-.category-card {
+.card {
   position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
 }
 
-.category-card__title {
+.card__title {
   position: absolute;
-  bottom: 10px;
   text-align: center;
   width: 100%;
 }

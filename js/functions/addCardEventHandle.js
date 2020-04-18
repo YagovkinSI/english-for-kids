@@ -19,10 +19,15 @@ function onCardClick (config, event)
       renderByConfig(config, mainElement);
       break;
     case 'play':      
-      const message = new SpeechSynthesisUtterance();
-      message.lang = "en-US";
-      message.text = event.target.dataset.name;
-      window.speechSynthesis.speak(message);
+      speak(event.target.dataset.name)
+      event.target.firstChild.classList.toggle('fliping');      
       break;
   };
+}
+
+function speak(text) {
+  const message = new SpeechSynthesisUtterance();
+  message.lang = "en-US";
+  message.text = text;
+  window.speechSynthesis.speak(message);
 }

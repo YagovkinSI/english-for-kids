@@ -4,6 +4,7 @@
 @import "abstract/invisible";
 @import "abstract/placeholders";
 @import "abstract/animation-move";
+@import "abstract/flip";
 @import "base/base";
 @import "base/hamburger";
 @import "layout/wrapper";
@@ -14,4 +15,4 @@
 // Components
 @import "components/logo";
 @import "components/switch-mode";
-@import "components/category-card";
+@import "components/card";
