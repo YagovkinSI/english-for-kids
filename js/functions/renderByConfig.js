@@ -1,4 +1,7 @@
+import shuffleArray from './shuffleArray.js';
+
 const mainElement = document.querySelector('.main__grid');
+const gameButton = document.querySelector('.game-button');
 
 export default function renderByConfig(config) {
   switch (config.page) {
@@ -18,6 +21,7 @@ export default function renderByConfig(config) {
 }
 
 function renderCategories(config, mainElement) {
+  gameButton.classList.add('invisible');
   mainElement.innerHTML = '';
   config.titleCards.forEach((titleCard) => {
     const el = renderCard(titleCard.category, titleCard.category, titleCard.img);
@@ -26,7 +30,9 @@ function renderCategories(config, mainElement) {
 }
 
 function renderTrain(config, mainElement) {
+  gameButton.classList.add('invisible');
   mainElement.innerHTML = '';
+  shuffleArray(config.cards);
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {
       const el = renderCard(card.en, card.ru, card.img);
@@ -36,7 +42,9 @@ function renderTrain(config, mainElement) {
 }
 
 function renderPlay(config, mainElement) {
+  gameButton.classList.remove('invisible');
   mainElement.innerHTML = '';
+  shuffleArray(config.cards);
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {
       const el = renderCard(card.en, card.ru, card.img, true);

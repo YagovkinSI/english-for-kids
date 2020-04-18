@@ -6,6 +6,7 @@ import renderByConfig from "./functions/renderByConfig.js";
 import fillSidebar from "./functions/fillSidebar.js";
 import addSidebarEventHandle from "./functions/addSidebarEventHandle.js";
 import addSwitchModeEventHandle from "./functions/addSwitchModeEventHandle.js";
+import addGameButtonEventHandle from "./functions/addGameButtonEventHandle.js";
 
 export const mainElement = document.querySelector('.main__grid');
 
@@ -25,4 +26,5 @@ window.onload = function() {
     addCardEventHandle(config);
     addSidebarEventHandle(config);
     addSwitchModeEventHandle(config);
+    addGameButtonEventHandle(config);
 };

@@ -1,4 +1,5 @@
 import renderByConfig from "./renderByConfig.js";
+import speakText from "./speakText.js";
 
 const mainElement = document.querySelector('.main__grid');
 
@@ -26,7 +27,7 @@ function onCardClick (config, event)
     case 'play':   
       switch (config.mode) {
         case 'train':
-          speak(target.dataset.name)
+          speakText(target.dataset.name)
           target.firstChild.classList.toggle('card_flip'); 
           break;
         case 'play':
@@ -34,11 +35,4 @@ function onCardClick (config, event)
       }        
       break;
   };
-}
-
-function speak(text) {
-  const message = new SpeechSynthesisUtterance();
-  message.lang = "en-US";
-  message.text = text;
-  window.speechSynthesis.speak(message);
 }

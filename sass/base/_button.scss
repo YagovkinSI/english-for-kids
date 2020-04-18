@@ -1,0 +1,10 @@
+.button {
+    background-color: $color-second; 
+    border: 2px solid $color-button-border; 
+    border-radius: 5px; 
+    color: $color-background;
+    &:hover {
+        @include hover(10px, $color-button-border);
+        @extend %transition;
+    }
+}

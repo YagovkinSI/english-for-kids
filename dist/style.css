@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.card__side:hover, .switch-mode__mode_active, .switch-mode:hover, .hamburger:hover::after, .hamburger:hover::before, .hamburger:hover > *, .hamburger {
+.card__side:hover, .switch-mode__mode_active, .hamburger:hover::after, .hamburger:hover::before, .hamburger:hover > *, .hamburger, .button:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -392,6 +392,17 @@ body {
   line-height: 2.4rem;
   font-weight: normal;
   font-style: normal;
+}
+
+.button {
+  background-color: #984f87;
+  border: 2px solid #503323;
+  border-radius: 5px;
+  color: #fdf3f4;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #503323;
 }
 
 .hamburger__line, .hamburger::after, .hamburger::before {
@@ -488,9 +499,15 @@ body {
   cursor: pointer;
 }
 
+.additional-line {
+  background-color: #fdf3f4;
+  min-height: 60px;
+  padding: 10px;
+}
+
 .main {
   background-color: #fdf3f4;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 140px);
 }
 
 .main__grid {
@@ -525,20 +542,12 @@ body {
   align-self: center;
   height: 40px;
   width: 80px;
-  background-color: #96313f;
-  border: 2px solid #503323;
-  border-radius: 5px;
-}
-.switch-mode:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px #503323;
 }
 
 .switch-mode__mode {
   font-size: 14px;
   line-height: 14px;
   padding: 1px 5px;
-  color: #fdf3f4;
 }
 
 .switch-mode__mode_1 {
@@ -595,6 +604,12 @@ body {
 
 .card_flip {
   transform: rotateY(180deg);
+}
+
+.game-button {
+  width: 200px;
+  margin: auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
