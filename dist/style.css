@@ -556,6 +556,7 @@ body {
 
 .card__title {
   position: absolute;
+  bottom: 30px;
   text-align: center;
   width: 100%;
 }

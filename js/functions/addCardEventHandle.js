@@ -10,17 +10,22 @@ export default function addCardEventHandle(config) {
 
 function onCardClick (config, event)
 {
-  if (!event.target.classList.contains('main__item'))
-    return;
+  var target = event.target;
+  while (!target.classList.contains('main__item'))
+  {
+    if (target.classList.contains('main'))
+      return;
+    target = target.parentNode;
+  }
   switch (config.page) {
     case 'menu':
       config.page = 'play';
-      config.currentCategory = event.target.dataset.name;
+      config.currentCategory = target.dataset.name;
       renderByConfig(config, mainElement);
       break;
     case 'play':      
-      speak(event.target.dataset.name)
-      event.target.firstChild.classList.toggle('fliping');      
+      speak(target.dataset.name)
+      target.firstChild.classList.toggle('fliping');      
       break;
   };
 }
