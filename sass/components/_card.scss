@@ -10,3 +10,22 @@
     text-align: center;
     width: 100%;    
 }
+
+.card__side {
+    background-color: $color-second;
+    backface-visibility: hidden; 
+    position: absolute;
+    width: 100%;
+}
+   
+.card__side_front {
+    z-index: 20;
+}
+   
+.card__side_back {
+    transform: rotateY(180deg);
+}
+
+.card_flip {
+    transform: rotateY(180deg);
+}

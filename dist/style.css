@@ -379,25 +379,6 @@ template {
     left: 0;
   }
 }
-.flip {
-  background-color: #984f87;
-  backface-visibility: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-.flip_front {
-  z-index: 20;
-}
-
-.flip_back {
-  transform: rotateY(180deg);
-}
-
-.fliping {
-  transform: rotateY(180deg);
-}
-
 html {
   font-size: 10px;
   line-height: 12px;
@@ -559,6 +540,25 @@ body {
   bottom: 30px;
   text-align: center;
   width: 100%;
+}
+
+.card__side {
+  background-color: #984f87;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.card__side_front {
+  z-index: 20;
+}
+
+.card__side_back {
+  transform: rotateY(180deg);
+}
+
+.card_flip {
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@ function onCardClick (config, event)
       break;
     case 'play':      
       speak(target.dataset.name)
-      target.firstChild.classList.toggle('fliping');      
+      target.firstChild.classList.toggle('card_flip');      
       break;
   };
 }
