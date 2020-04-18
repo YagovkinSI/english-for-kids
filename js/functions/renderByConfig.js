@@ -4,6 +4,7 @@ const mainElement = document.querySelector('.main__grid');
 const gameButton = document.querySelector('.game-button');
 
 export default function renderByConfig(config) {
+  config.reset();
   switch (config.page) {
     case 'menu':
       renderCategories(config, mainElement);

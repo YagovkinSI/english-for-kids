@@ -1,5 +1,6 @@
 import renderByConfig from "./renderByConfig.js";
 import speakText from "./speakText.js";
+import runGame from "./runGame.js";
 
 const mainElement = document.querySelector('.main__grid');
 
@@ -31,6 +32,17 @@ function onCardClick (config, event)
           target.firstChild.classList.toggle('card_flip'); 
           break;
         case 'play':
+          if (config.numberWord == 0)
+            return;
+          if (target.dataset.name == config.getCurrentCard().en) {
+            speakText('yes');
+            runGame(config);
+          }
+          else {
+            config.wrongCount++;
+            speakText('wrong');
+          }
+          console.log(config.wrongCount);
           break;
       }        
       break;
