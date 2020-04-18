@@ -526,4 +526,15 @@ body {
   align-self: center;
 }
 
+.category-card {
+  position: relative;
+}
+
+.category-card__title {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
