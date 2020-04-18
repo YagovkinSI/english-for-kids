@@ -43,14 +43,14 @@ function renderCard(title, title_back, img) {
   el.dataset.name = title;
   const card = createElement('div', ['card'], el);
   const front = createElement('div', ['card__side', 'card__side_front'], card);
-  const front_img = createElement('img', false, front);
+  const front_img = createElement('img', ['card__image'], front);
   front_img.setAttribute('src', img);
   front_img.setAttribute('width', '100%');
   front_img.setAttribute('alt', title);
   const frontTitle = createElement('div', ['card__title'], front);
   frontTitle.innerText = title;  
   const back = createElement('div', ['card__side', 'card__side_back'], card);
-  const back_img = createElement('img', false, back);
+  const back_img = createElement('img', ['card__image'], back);
   back_img.setAttribute('src', img);
   back_img.setAttribute('width', '100%');
   back_img.setAttribute('alt', title_back);

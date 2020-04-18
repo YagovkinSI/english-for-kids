@@ -6,16 +6,24 @@
 
 .card__title {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     text-align: center;
-    width: 100%;    
+    width: 100%;   
+    background-color: $color-background; 
+}
+
+.card__image {    
+    border-radius: 20px;
 }
 
 .card__side {
-    background-color: $color-second;
+    border-radius: 20px;
     backface-visibility: hidden; 
     position: absolute;
     width: 100%;
+    &:hover {
+        @include hover(10px);
+    }
 }
    
 .card__side_front {

@@ -512,10 +512,6 @@ body {
   float: left;
   padding-top: 100%;
 }
-.main__item:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px #6a3563;
-}
 
 .logo {
   align-self: center;
@@ -537,16 +533,25 @@ body {
 
 .card__title {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   text-align: center;
   width: 100%;
+  background-color: #fdf3f4;
+}
+
+.card__image {
+  border-radius: 20px;
 }
 
 .card__side {
-  background-color: #984f87;
+  border-radius: 20px;
   backface-visibility: hidden;
   position: absolute;
   width: 100%;
+}
+.card__side:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #6a3563;
 }
 
 .card__side_front {
