@@ -457,7 +457,7 @@ body {
 .header__grid {
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
 .header__menu {
@@ -490,6 +490,7 @@ body {
 
 .main {
   background-color: #fdf3f4;
+  min-height: calc(100vh - 80px);
 }
 
 .main__grid {
