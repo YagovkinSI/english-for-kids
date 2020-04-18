@@ -345,6 +345,40 @@ template {
   transition: all 0.3s ease-out;
 }
 
+.animation_to-left {
+  animation-name: left;
+}
+
+.animation_to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.animation_from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.animation_from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
 html {
   font-size: 10px;
   line-height: 12px;
@@ -399,6 +433,10 @@ body {
   top: 40%;
 }
 
+.hamburger_vertical {
+  transform: rotate(-270deg);
+}
+
 .wrapper {
   max-width: 1020px;
   margin: auto;
@@ -430,6 +468,9 @@ body {
 
 .sidebar {
   background-color: #984f87;
+  position: absolute;
+  width: 250px;
+  height: 100%;
 }
 
 .main {
@@ -439,6 +480,11 @@ body {
 .main__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .main__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .main__item {

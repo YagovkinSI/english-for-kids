@@ -33,3 +33,7 @@
 	@extend %hamburger__line;
     top: 40%;
 }
+
+.hamburger_vertical {
+	transform: rotate(-270deg);
+}
