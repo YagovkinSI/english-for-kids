@@ -18,9 +18,9 @@ window.onload = function() {
     //добавить динамику
     addHamburgerEventHandle();
     mainElement.addEventListener('click', function() { 
-        switch (config.mode) {
+        switch (config.page) {
             case 'menu':
-              config.mode = 'train';
+              config.page = 'play';
               config.currentCategory = event.target.dataset.name;
               RenderByConfig(config, mainElement);
               break;

@@ -1,10 +1,9 @@
 export default function renderByConfig(config, mainElement) {
-  console.log(config);
-  switch (config.mode) {
+  switch (config.page) {
     case 'menu':
       renderCategories(config, mainElement);
       break;
-    case 'train':
+    case 'play':
       renderTrain(config, mainElement);
       break;
   }
@@ -22,7 +21,6 @@ function renderCategories(config, mainElement) {
 }
 
 function renderTrain(config, mainElement) {
-  console.log(config.currentCategory);
   mainElement.innerHTML = '';
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {
