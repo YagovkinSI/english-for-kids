@@ -1,4 +1,5 @@
 import renderByConfig from "./renderByConfig.js";
+import sidebarMove from "./sidebarMove.js";
 
 const sidebar__ul = document.querySelector('.sidebar__ul');
 const mainElement = document.querySelector('.main__grid');
@@ -26,4 +27,5 @@ export default function addSidebarEventHandle(config) {
         renderByConfig(config, mainElement);
         break;
     };
+    sidebarMove();
   }

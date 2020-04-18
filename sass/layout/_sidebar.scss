@@ -3,6 +3,7 @@
     position: absolute;
     width: 250px;
     height: calc(100% - 80px);
+    z-index: 60;
 }
 
 .sidebar__ul {

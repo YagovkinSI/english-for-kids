@@ -451,6 +451,7 @@ body {
   display: fixed;
   background-color: #e6adcd;
   height: 80px;
+  z-index: 90;
 }
 
 .header__grid {
@@ -472,6 +473,7 @@ body {
   position: absolute;
   width: 250px;
   height: calc(100% - 80px);
+  z-index: 60;
 }
 
 .sidebar__ul {

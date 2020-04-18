@@ -1,7 +1,8 @@
 .header {
     display: fixed;
     background-color: $color-main;
-	height: 80px;
+    height: 80px;
+    z-index: 90;
 }
 
 .header__grid {
