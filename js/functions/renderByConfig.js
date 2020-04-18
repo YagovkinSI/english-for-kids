@@ -4,7 +4,7 @@ export default function renderByConfig(config, mainElement) {
       renderCategories(config, mainElement);
       break;
     case 'play':
-      renderTrain(config, mainElement);
+      renderPlay(config, mainElement);
       break;
   }
 }
@@ -20,7 +20,7 @@ function renderCategories(config, mainElement) {
   });
 }
 
-function renderTrain(config, mainElement) {
+function renderPlay(config, mainElement) {
   mainElement.innerHTML = '';
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {

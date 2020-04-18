@@ -2,5 +2,17 @@
     background-color: $color-second;
     position: absolute;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 80px);
+}
+
+.sidebar__ul {
+    margin-top: 40px;
+}
+
+.sidebar__li {
+    margin-top: 20px;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

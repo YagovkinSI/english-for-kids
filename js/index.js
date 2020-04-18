@@ -1,7 +1,9 @@
 import fillCards from "./functions/fillCards.js";
 import addHamburgerEventHandle from "./functions/addHamburgerEventHandle.js";
+import addCardEventHandle from "./functions/addCardEventHandle.js";
 import Config from "./classes/Config.js";
-import RenderByConfig from "./functions/renderByConfig.js";
+import renderByConfig from "./functions/renderByConfig.js";
+import fillSidebar from "./functions/fillSidebar.js";
 
 export const mainElement = document.querySelector('.main__grid');
 
@@ -13,17 +15,10 @@ window.onload = function() {
     const config = new Config(cards, titleCards);
 
     //заполнить страницу
-    RenderByConfig(config, mainElement);
+    fillSidebar(config);
+    renderByConfig(config, mainElement);
 
     //добавить динамику
     addHamburgerEventHandle();
-    mainElement.addEventListener('click', function() { 
-        switch (config.page) {
-            case 'menu':
-              config.page = 'play';
-              config.currentCategory = event.target.dataset.name;
-              RenderByConfig(config, mainElement);
-              break;
-          }
-    });
+    addCardEventHandle(config);
 };

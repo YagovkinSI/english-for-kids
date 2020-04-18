@@ -450,6 +450,7 @@ body {
 .header {
   display: fixed;
   background-color: #e6adcd;
+  height: 80px;
 }
 
 .header__grid {
@@ -470,7 +471,19 @@ body {
   background-color: #984f87;
   position: absolute;
   width: 250px;
-  height: 100%;
+  height: calc(100% - 80px);
+}
+
+.sidebar__ul {
+  margin-top: 40px;
+}
+
+.sidebar__li {
+  margin-top: 20px;
+}
+.sidebar__li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .main {
