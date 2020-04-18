@@ -4,7 +4,6 @@ export default class Card {
     this.en = obj.en;
     this.ru = obj.ru;
     this.img = obj.img;
-    this.audio = obj.audio;
     this.title = obj.title;
   }
 }

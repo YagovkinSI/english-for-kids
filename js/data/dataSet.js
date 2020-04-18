@@ -5,7 +5,6 @@ export default [
     en: 'Head',
     ru: 'Голова',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -13,7 +12,6 @@ export default [
     en: 'Shoulders',
     ru: 'Плечи',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -21,7 +19,6 @@ export default [
     en: 'Knees',
     ru: 'Колени',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -29,7 +26,6 @@ export default [
     en: 'Toes',
     ru: 'Мысочки',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -37,7 +33,6 @@ export default [
     en: 'Eyes',
     ru: 'Глаза',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -45,7 +40,6 @@ export default [
     en: 'Ears',
     ru: 'Уши',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -53,7 +47,6 @@ export default [
     en: 'Mouth',
     ru: 'Рот',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Parts of The Body',
@@ -61,7 +54,6 @@ export default [
     en: 'Nose',
     ru: 'Нос',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -69,7 +61,6 @@ export default [
     en: 'Red',
     ru: 'Красный',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -77,7 +68,6 @@ export default [
     en: 'Orange',
     ru: 'Оранжевый',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -85,7 +75,6 @@ export default [
     en: 'Yellow',
     ru: 'Жёлтый',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -93,7 +82,6 @@ export default [
     en: 'Green',
     ru: 'Зелёный',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -101,7 +89,6 @@ export default [
     en: 'Blue',
     ru: 'Синий',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -109,7 +96,6 @@ export default [
     en: 'Black',
     ru: 'Чёрный',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -117,7 +103,6 @@ export default [
     en: 'Gray',
     ru: 'Серый',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Colors',
@@ -125,7 +110,6 @@ export default [
     en: 'White',
     ru: 'Белый',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -133,7 +117,6 @@ export default [
     en: 'Circle',
     ru: 'Круг',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -141,7 +124,6 @@ export default [
     en: 'Triangle',
     ru: 'Треугольник',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -149,7 +131,6 @@ export default [
     en: 'Rectangle',
     ru: 'Прямоугольник',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -157,7 +138,6 @@ export default [
     en: 'Square',
     ru: 'Квадрат',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -165,7 +145,6 @@ export default [
     en: 'Diamond',
     ru: 'Ромб',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -173,7 +152,6 @@ export default [
     en: 'Heart',
     ru: 'Сердце',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -181,7 +159,6 @@ export default [
     en: 'Star',
     ru: 'Звезда',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Shapes and Figures',
@@ -189,7 +166,6 @@ export default [
     en: 'Hexagon',
     ru: 'Гексагон',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -197,7 +173,6 @@ export default [
     en: 'Milk',
     ru: 'Молоко',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -205,7 +180,6 @@ export default [
     en: 'Cheese',
     ru: 'Сыр',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -213,7 +187,6 @@ export default [
     en: 'Apple',
     ru: 'Яблоко',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -221,7 +194,6 @@ export default [
     en: 'Bread',
     ru: 'Хлеб',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -229,7 +201,6 @@ export default [
     en: 'Yogurt',
     ru: 'Йогурт',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -237,7 +208,6 @@ export default [
     en: 'Pizza',
     ru: 'Пицца',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -245,7 +215,6 @@ export default [
     en: 'Sandwich',
     ru: 'Бутерброд',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
   },
   {
     category: 'Food',
@@ -253,6 +222,117 @@ export default [
     en: 'Pancakes',
     ru: 'Блины',
     img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
-    audio: './../audio/Яговкин Сергей - Где правда, где ложь (отрывок).mp3',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Dog',
+    ru: 'Собака',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: true,
+    en: 'Cat',
+    ru: 'Кошка',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Horse',
+    ru: 'Лошадь',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Rabbit',
+    ru: 'Кролик',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Cow',
+    ru: 'Корова',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Mouse',
+    ru: 'Мышь',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Bird',
+    ru: 'Птица',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Animals',
+    title: false,
+    en: 'Turtle',
+    ru: 'Черепаха',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: true,
+    en: 'One',
+    ru: 'Один',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Two',
+    ru: 'Два',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Three',
+    ru: 'Три',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Four',
+    ru: 'Четыре',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Five',
+    ru: 'Пять',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Six',
+    ru: 'Шесть',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Seven',
+    ru: 'Семь',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
+  },
+  {
+    category: 'Numbers',
+    title: false,
+    en: 'Eight',
+    ru: 'Восемь',
+    img: './../img/uk6WTf5C09S3PIQhl8TBA.jpg',
   },
 ];

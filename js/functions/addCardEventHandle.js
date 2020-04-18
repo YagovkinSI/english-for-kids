@@ -18,5 +18,11 @@ function onCardClick (config, event)
       config.currentCategory = event.target.dataset.name;
       renderByConfig(config, mainElement);
       break;
+    case 'play':      
+      const message = new SpeechSynthesisUtterance();
+      message.lang = "en-US";
+      message.text = event.target.dataset.name;
+      window.speechSynthesis.speak(message);
+      break;
   };
 }

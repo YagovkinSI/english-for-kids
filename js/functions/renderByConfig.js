@@ -31,7 +31,7 @@ function renderPlay(config, mainElement) {
       const el = document.createElement('div');
       el.classList.add('main__item');
       el.classList.add('category-card');
-      el.dataset.name = card.category;
+      el.dataset.name = card.en;
       const title = document.createElement('div');
       title.classList.add('category-card__title');
       title.innerText = card.en;
