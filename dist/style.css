@@ -533,10 +533,12 @@ body {
 
 .card__title {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
   text-align: center;
+  line-height: 30px;
   width: 100%;
-  background-color: #fdf3f4;
+  background-color: #e6adcd;
 }
 
 .card__image {

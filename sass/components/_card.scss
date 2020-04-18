@@ -6,18 +6,20 @@
 
 .card__title {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
+    border-radius: 0 0  $card-border-radius $card-border-radius;
     text-align: center;
+    line-height: 30px;
     width: 100%;   
-    background-color: $color-background; 
+    background-color: $color-main; 
 }
 
 .card__image {    
-    border-radius: 20px;
+    border-radius: $card-border-radius;
 }
 
 .card__side {
-    border-radius: 20px;
+    border-radius: $card-border-radius;
     backface-visibility: hidden; 
     position: absolute;
     width: 100%;
