@@ -1,4 +1,34 @@
 .switch-mode {
     justify-self: end;
-    align-self: center; 
+    align-self: center;
+    height: 40px;
+    width: 80px;
+    background-color: $color-button-bg; 
+    border: 2px solid $color-button-border; 
+    border-radius: 5px; 
+    &:hover {
+        @include hover(10px, $color-button-border);
+        @extend %transition;
+    }
+}
+
+.switch-mode__mode {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 1px 5px;
+    color: $color-background;
+}
+
+.switch-mode__mode_1 {
+    text-align: left;
+}
+
+.switch-mode__mode_2 {
+    text-align: right;
+}
+
+.switch-mode__mode_active {
+    font-size: 24px;
+    line-height: 24px;
+	@extend %transition;
 }

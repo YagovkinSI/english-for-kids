@@ -23,9 +23,15 @@ function onCardClick (config, event)
       config.currentCategory = target.dataset.name;
       renderByConfig(config, mainElement);
       break;
-    case 'play':      
-      speak(target.dataset.name)
-      target.firstChild.classList.toggle('card_flip');      
+    case 'play':   
+      switch (config.mode) {
+        case 'train':
+          speak(target.dataset.name)
+          target.firstChild.classList.toggle('card_flip'); 
+          break;
+        case 'play':
+          break;
+      }        
       break;
   };
 }

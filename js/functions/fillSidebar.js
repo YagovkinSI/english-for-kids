@@ -8,7 +8,7 @@ export default function fillSidebar(config) {
   function addMainMenu() {
     var el = document.createElement('li');
     el.classList.add('sidebar__li');
-    el.innerText = 'Main Menu';
+    el.innerText = 'MENU';
     el.dataset['category'] = 'menu';
     sidebar.append(el);
   }

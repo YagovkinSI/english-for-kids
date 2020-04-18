@@ -23,9 +23,18 @@
         top: 80%;
     };
     &:hover {
-        & > *{ @include hover(4px); } 
-        &::before{ @include hover(4px); };
-        &::after{ @include hover(4px); };       
+        & > *{ 
+            @include hover(4px); 
+            @extend %transition; 
+        } 
+        &::before{ 
+            @include hover(4px); 
+            @extend %transition; 
+        };
+        &::after{
+             @include hover(4px); 
+            @extend %transition; 
+        };      
     }    
 }
 
@@ -35,5 +44,5 @@
 }
 
 .hamburger_vertical {
-	transform: rotate(-270deg);
+	transform: rotate(-90deg);
 }

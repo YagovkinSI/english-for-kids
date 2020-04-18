@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.hamburger {
+.card__side:hover, .switch-mode__mode_active, .switch-mode:hover, .hamburger:hover::after, .hamburger:hover::before, .hamburger:hover > *, .hamburger {
   transition: all 0.3s ease-out;
 }
 
@@ -434,7 +434,7 @@ body {
 }
 
 .hamburger_vertical {
-  transform: rotate(-270deg);
+  transform: rotate(-90deg);
 }
 
 .wrapper {
@@ -523,11 +523,40 @@ body {
 .switch-mode {
   justify-self: end;
   align-self: center;
+  height: 40px;
+  width: 80px;
+  background-color: #96313f;
+  border: 2px solid #503323;
+  border-radius: 5px;
+}
+.switch-mode:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #503323;
+}
+
+.switch-mode__mode {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 1px 5px;
+  color: #fdf3f4;
+}
+
+.switch-mode__mode_1 {
+  text-align: left;
+}
+
+.switch-mode__mode_2 {
+  text-align: right;
+}
+
+.switch-mode__mode_active {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .card {
   position: relative;
-  transition: 0.6s;
+  transition: 1.5s;
   transform-style: preserve-3d;
 }
 

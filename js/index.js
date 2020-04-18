@@ -5,6 +5,7 @@ import Config from "./classes/Config.js";
 import renderByConfig from "./functions/renderByConfig.js";
 import fillSidebar from "./functions/fillSidebar.js";
 import addSidebarEventHandle from "./functions/addSidebarEventHandle.js";
+import addSwitchModeEventHandle from "./functions/addSwitchModeEventHandle.js";
 
 export const mainElement = document.querySelector('.main__grid');
 
@@ -23,4 +24,5 @@ window.onload = function() {
     addHamburgerEventHandle();
     addCardEventHandle(config);
     addSidebarEventHandle(config);
+    addSwitchModeEventHandle(config);
 };
