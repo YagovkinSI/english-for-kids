@@ -10,6 +10,8 @@ export default function addCardEventHandle(config) {
 
 function onCardClick (config, event)
 {
+  if (!event.target.classList.contains('main__item'))
+    return;
   switch (config.page) {
     case 'menu':
       config.page = 'play';

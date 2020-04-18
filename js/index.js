@@ -4,6 +4,7 @@ import addCardEventHandle from "./functions/addCardEventHandle.js";
 import Config from "./classes/Config.js";
 import renderByConfig from "./functions/renderByConfig.js";
 import fillSidebar from "./functions/fillSidebar.js";
+import addSidebarEventHandle from "./functions/addSidebarEventHandle.js";
 
 export const mainElement = document.querySelector('.main__grid');
 
@@ -21,4 +22,5 @@ window.onload = function() {
     //добавить динамику
     addHamburgerEventHandle();
     addCardEventHandle(config);
+    addSidebarEventHandle(config);
 };
