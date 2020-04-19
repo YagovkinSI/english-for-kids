@@ -43,6 +43,8 @@ function renderTrain(config, mainElement) {
 }
 
 function renderPlay(config, mainElement) {
+  gameButton.classList.remove('game-button_color4');
+  gameButton.innerHTML = 'Start game';
   gameButton.classList.remove('invisible');
   mainElement.innerHTML = '';
   shuffleArray(config.cards);
