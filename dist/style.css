@@ -507,7 +507,7 @@ body {
 
 .main {
   background-color: #fdf3f4;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 80px);
 }
 
 .main__grid {
@@ -521,7 +521,6 @@ body {
 }
 
 .main__item {
-  perspective: 1000;
   margin: 20px;
 }
 .main__item::before {
@@ -570,6 +569,9 @@ body {
 }
 
 .card__title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: bold;
   position: absolute;
   bottom: 0;
   border-radius: 0 0 20px 20px;
@@ -577,6 +579,11 @@ body {
   line-height: 30px;
   width: 100%;
   background-color: #e6adcd;
+}
+
+.card__title_category {
+  text-transform: uppercase;
+  background-color: #984f87;
 }
 
 .card__image {

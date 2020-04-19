@@ -1,6 +1,6 @@
 .main {
     background-color: $color-background;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 80px);
 }
 
 .main__grid {
@@ -11,8 +11,7 @@
     }
 }
 
-.main__item {
-    perspective: 1000;
+.main__item {  
     margin: 20px;
     &::before {
         content: "";

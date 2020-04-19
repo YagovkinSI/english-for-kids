@@ -25,7 +25,7 @@ function renderCategories(config, mainElement) {
   gameButton.classList.add('invisible');
   mainElement.innerHTML = '';
   config.titleCards.forEach((titleCard) => {
-    const el = renderCard(titleCard.category, titleCard.category, titleCard.img);
+    const el = renderCard(titleCard.category, titleCard.category, titleCard.img, false, true);
     mainElement.appendChild(el);
   });
 }
@@ -67,7 +67,7 @@ function createElement(obj, classes, parrent) {
   return el;
 }
 
-function renderCard(title, title_back, img, playMode = false) {
+function renderCard(title, title_back, img, playMode = false, isMenu = false) {
   const el = createElement('div', ['main__item']);
   el.dataset.name = title;
   el.dataset.state = 'true';
@@ -80,6 +80,8 @@ function renderCard(title, title_back, img, playMode = false) {
   if (!playMode) {
     const frontTitle = createElement('div', ['card__title'], front);
     frontTitle.innerText = title; 
+    if (isMenu)
+      frontTitle.classList.add('card__title_category');     
   } 
   if (!playMode) {
     const back = createElement('div', ['card__side', 'card__side_back'], card);
