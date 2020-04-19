@@ -1,5 +1,6 @@
 import shuffleArray from './shuffleArray.js';
 import speakText from './speakText.js';
+import renderByConfig from './renderByConfig.js';
 
 export default function runGame(config) {
     if (config.numberWord == 0) {
@@ -16,6 +17,9 @@ export default function runGame(config) {
             ? 'Congratulation!'
             : `Game over! Wrong count - ${config.wrongCount}.`);
         config.reset();
+        config.page = 'menu';
+        setTimeout(() => renderByConfig(config), 3000);
+        
     }  
     else 
         speakText(config.getCurrentCard().en);
