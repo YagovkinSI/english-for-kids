@@ -28,14 +28,16 @@ function onCardClick (config, event)
     case 'play':   
       switch (config.mode) {
         case 'train':
-          speakText(target.dataset.name)
+          speakText(target.dataset.name);
           target.firstChild.classList.toggle('card_flip'); 
           break;
         case 'play':
-          if (config.numberWord == 0)
+          if (config.numberWord == 0 || target.dataset.state == 'false')
             return;
           if (target.dataset.name == config.getCurrentCard().en) {
             speakText('yes');
+            target.dataset.state = 'false';
+            target.firstChild.classList.toggle('card_flip');
             runGame(config);
           }
           else {

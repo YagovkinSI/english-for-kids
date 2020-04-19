@@ -68,6 +68,7 @@ function createElement(obj, classes, parrent) {
 function renderCard(title, title_back, img, playMode = false) {
   const el = createElement('div', ['main__item']);
   el.dataset.name = title;
+  el.dataset.state = 'true';
   const card = createElement('div', ['card'], el);
   const front = createElement('div', ['card__side', 'card__side_front'], card);
   const front_img = createElement('img', ['card__image'], front);
@@ -78,14 +79,17 @@ function renderCard(title, title_back, img, playMode = false) {
     const frontTitle = createElement('div', ['card__title'], front);
     frontTitle.innerText = title; 
   } 
-  const back = createElement('div', ['card__side', 'card__side_back'], card);
-  const back_img = createElement('img', ['card__image'], back);
-  back_img.setAttribute('src', img);
-  back_img.setAttribute('width', '100%');
-  back_img.setAttribute('alt', title_back);
   if (!playMode) {
+    const back = createElement('div', ['card__side', 'card__side_back'], card);
+    const back_img = createElement('img', ['card__image'], back);
+    back_img.setAttribute('src', img);
+    back_img.setAttribute('width', '100%');
+    back_img.setAttribute('alt', title_back);
     const backTitle = createElement('div', ['card__title'], back);
     backTitle.innerText = title_back;
   } 
+  else {
+    const back = createElement('div', ['card__side', 'card__side_back'], card);
+  }
   return el;
 }
