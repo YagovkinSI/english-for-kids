@@ -19,6 +19,11 @@ function onSidebarUlClick(config, event) {
       config.currentCategory = '';
       renderByConfig(config, mainElement);
       break;
+    case 'statistic':
+      config.page = 'statistic';
+      config.currentCategory = '';
+      renderByConfig(config, mainElement);
+      break;
     default:
       config.page = 'play';
       config.currentCategory = category;

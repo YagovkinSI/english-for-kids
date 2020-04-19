@@ -7,6 +7,10 @@ const stackPoint = document.querySelector('.stack-point');
 
 export default function renderByConfig(config) {
   config.reset();
+  mainElement.classList.remove('statistic');
+  gameButton.classList.add('invisible');
+  stackPoint.classList.add('invisible');
+  mainElement.innerHTML = '';
   switch (config.page) {
     case 'menu':
       renderCategories(config, mainElement);
@@ -20,13 +24,14 @@ export default function renderByConfig(config) {
           renderPlay(config, mainElement);
           break;
       }
+      break;
+    case 'statistic':
+      renderStatistic(config, mainElement);
+      break;
   }
 }
 
 function renderCategories(config, mainElement) {
-  gameButton.classList.add('invisible');
-  stackPoint.classList.add('invisible');
-  mainElement.innerHTML = '';
   config.titleCards.forEach((titleCard) => {
     const el = renderCard(titleCard.category, titleCard.category, titleCard.img, false, true);
     mainElement.appendChild(el);
@@ -34,9 +39,6 @@ function renderCategories(config, mainElement) {
 }
 
 function renderTrain(config, mainElement) {
-  gameButton.classList.add('invisible');
-  stackPoint.classList.add('invisible');
-  mainElement.innerHTML = '';
   shuffleArray(config.cards);
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {
@@ -52,13 +54,34 @@ function renderPlay(config, mainElement) {
   gameButton.classList.remove('invisible');
   stackPoint.innerHTML = '';
   stackPoint.classList.remove('invisible');
-  mainElement.innerHTML = '';
   shuffleArray(config.cards);
   config.cards.forEach((card) => {
     if (card.category == config.currentCategory) {
       const el = renderCard(card.en, card.ru, card.img, true);
       mainElement.appendChild(el);
     }
+  });
+}
+
+function renderStatistic(config, mainElement) {
+  mainElement.classList.add('statistic');
+  mainElement.innerHTML = '';
+  config.cards.sort((a, b) => { a.id - b.id; });
+  let newRow = createElement('div', ['statistic__row', 'statistic__row_title'], mainElement);
+  let el = createElement('div', ['statistic__element'], newRow);
+  el.innerHTML = 'Category';
+  el = createElement('div', ['statistic__element'], newRow);
+  el.innerHTML = 'English';
+  el = createElement('div', ['statistic__element'], newRow);
+  el.innerHTML = 'Russian';
+  config.cards.forEach((card) => {
+    newRow = createElement('div', ['statistic__row'], mainElement);
+    el = createElement('div', ['statistic__element'], newRow);
+    el.innerHTML = card.category;
+    el = createElement('div', ['statistic__element'], newRow);
+    el.innerHTML = card.en;
+    el = createElement('div', ['statistic__element'], newRow);
+    el.innerHTML = card.ru;
   });
 }
 
