@@ -1,12 +1,8 @@
-import renderByConfig from './renderByConfig.js';
+import renderByConfig from './renderByConfig';
 
-const switch_mode = document.querySelector('.switch-mode');
-const switch_mode_1 = document.querySelector('.switch-mode__mode_1');
-const switch_mode_2 = document.querySelector('.switch-mode__mode_2');
-
-export default function addSwitchModeEventHandle(config) {
-  switch_mode.addEventListener('click', () => { changeMode(config); });
-}
+const switchMode = document.querySelector('.switch-mode');
+const switchMode1 = document.querySelector('.switch-mode__mode_1');
+const switchMode2 = document.querySelector('.switch-mode__mode_2');
 
 function changeMode(config) {
   switch (config.mode) {
@@ -17,7 +13,11 @@ function changeMode(config) {
       config.mode = 'train';
       break;
   }
-  switch_mode_1.classList.toggle('switch-mode__mode_active');
-  switch_mode_2.classList.toggle('switch-mode__mode_active');
+  switchMode1.classList.toggle('switch-mode__mode_active');
+  switchMode2.classList.toggle('switch-mode__mode_active');
   renderByConfig(config);
+}
+
+export default function addSwitchModeEventHandle(config) {
+  switchMode.addEventListener('click', () => { changeMode(config); });
 }

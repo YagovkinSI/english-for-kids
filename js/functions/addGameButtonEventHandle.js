@@ -1,11 +1,11 @@
-import speakText from './speakText.js';
-import runGame from './runGame.js';
+import speakText from './speakText';
+import runGame from './runGame';
 
 const gameButton = document.querySelector('.game-button');
 
 export default function addGameButtonEventHandle(config) {
   gameButton.addEventListener('click', () => {
-    if (config.numberWord == 0) {
+    if (config.numberWord === 0) {
       gameButton.classList.add('game-button_color4');
       gameButton.innerHTML = 'Repeat word';
       runGame(config);

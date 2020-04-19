@@ -1,14 +1,8 @@
-import renderByConfig from './renderByConfig.js';
-import sidebarMove from './sidebarMove.js';
+import renderByConfig from './renderByConfig';
+import sidebarMove from './sidebarMove';
 
-const sidebar__ul = document.querySelector('.sidebar__ul');
+const sidebarUl = document.querySelector('.sidebar__ul');
 const mainElement = document.querySelector('.main__grid');
-
-export default function addSidebarEventHandle(config) {
-  sidebar__ul.addEventListener('click', () => {
-    onSidebarUlClick(config, event);
-  });
-}
 
 function onSidebarUlClick(config, event) {
   if (!event.target.classList.contains('sidebar__li')) { return; }
@@ -31,4 +25,10 @@ function onSidebarUlClick(config, event) {
       break;
   }
   sidebarMove();
+}
+
+export default function addSidebarEventHandle(config) {
+  sidebarUl.addEventListener('click', () => {
+    onSidebarUlClick(config, event);
+  });
 }

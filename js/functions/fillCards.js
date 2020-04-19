@@ -1,5 +1,5 @@
-import dataSet from '../data/dataSet.js';
-import Card from '../classes/Card.js';
+import dataSet from '../data/dataSet';
+import Card from '../classes/Card';
 
 export default function fillCards() {
   const cards = [];
@@ -8,7 +8,7 @@ export default function fillCards() {
   dataSet.forEach((obj) => {
     const card = new Card(obj);
     card.id = id;
-    id++;
+    id += 1;
     cards.push(card);
     if (obj.title) { titleCards.push(card); }
   });

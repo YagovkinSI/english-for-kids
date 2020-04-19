@@ -1,12 +1,6 @@
-import createElement from './createElement.js';
+import createElement from './createElement';
 
 const sidebar = document.querySelector('.sidebar__ul');
-
-export default function fillSidebar(config) {
-  addMainMenu();
-  addCategories(config);
-  addStatistic();
-}
 
 function addMainMenu() {
   const el = createElement('li', ['sidebar__li'], sidebar);
@@ -26,4 +20,10 @@ function addStatistic() {
   const el = createElement('li', ['sidebar__li'], sidebar);
   el.innerText = 'STATISTIC';
   el.dataset.category = 'statistic';
+}
+
+export default function fillSidebar(config) {
+  addMainMenu();
+  addCategories(config);
+  addStatistic();
 }
