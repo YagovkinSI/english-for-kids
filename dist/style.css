@@ -503,6 +503,8 @@ body {
   background-color: #fdf3f4;
   min-height: 60px;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 .main {
@@ -614,13 +616,44 @@ body {
 }
 
 .game-button {
-  width: 200px;
-  margin: auto;
+  width: calc(100% - 20px);
+  margin-left: 20px;
   text-align: center;
+  line-height: 60px;
 }
 
 .game-button_color4 {
   background-color: #abc482;
+}
+
+.stack-point {
+  background-color: #abc482;
+  width: calc(100% - 30px);
+  border: 2px solid #503323;
+  border-radius: 5px;
+  color: #fdf3f4;
+  line-height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.stack-point__marker {
+  height: 30px;
+  width: 30px;
+  margin: 15px 3px;
+  border-radius: 50%;
+  border: 1px solid black;
+  float: right;
+  display: inline-block;
+}
+
+.stack-point__marker_yes {
+  background-color: green;
+}
+
+.stack-point__marker_no {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

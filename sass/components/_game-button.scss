@@ -1,7 +1,8 @@
 .game-button {
-    width: 200px;
-    margin: auto;
+    width: calc(100% - 20px);
+    margin-left: 20px;
     text-align: center;
+    line-height: 60px;
 }
 
 .game-button_color4 {

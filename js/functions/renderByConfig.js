@@ -1,7 +1,9 @@
 import shuffleArray from './shuffleArray.js';
+import createElement from './createElement.js';
 
 const mainElement = document.querySelector('.main__grid');
 const gameButton = document.querySelector('.game-button');
+const stackPoint = document.querySelector('.stack-point');
 
 export default function renderByConfig(config) {
   config.reset();
@@ -10,7 +12,7 @@ export default function renderByConfig(config) {
       renderCategories(config, mainElement);
       break;
     case 'play':
-      switch(config.mode) {
+      switch (config.mode) {
         case 'train':
           renderTrain(config, mainElement);
           break;
@@ -23,6 +25,7 @@ export default function renderByConfig(config) {
 
 function renderCategories(config, mainElement) {
   gameButton.classList.add('invisible');
+  stackPoint.classList.add('invisible');
   mainElement.innerHTML = '';
   config.titleCards.forEach((titleCard) => {
     const el = renderCard(titleCard.category, titleCard.category, titleCard.img, false, true);
@@ -32,6 +35,7 @@ function renderCategories(config, mainElement) {
 
 function renderTrain(config, mainElement) {
   gameButton.classList.add('invisible');
+  stackPoint.classList.add('invisible');
   mainElement.innerHTML = '';
   shuffleArray(config.cards);
   config.cards.forEach((card) => {
@@ -46,6 +50,8 @@ function renderPlay(config, mainElement) {
   gameButton.classList.remove('game-button_color4');
   gameButton.innerHTML = 'Start game';
   gameButton.classList.remove('invisible');
+  stackPoint.innerHTML = '';
+  stackPoint.classList.remove('invisible');
   mainElement.innerHTML = '';
   shuffleArray(config.cards);
   config.cards.forEach((card) => {
@@ -54,17 +60,6 @@ function renderPlay(config, mainElement) {
       mainElement.appendChild(el);
     }
   });
-}
-
-function createElement(obj, classes, parrent) {  
-  const el = document.createElement(obj);  
-  if (classes)
-    classes.forEach(c => {
-      el.classList.add(c);
-    })
-  if (parrent)
-    parrent.appendChild(el);
-  return el;
 }
 
 function renderCard(title, title_back, img, playMode = false, isMenu = false) {
@@ -79,10 +74,9 @@ function renderCard(title, title_back, img, playMode = false, isMenu = false) {
   front_img.setAttribute('alt', title);
   if (!playMode) {
     const frontTitle = createElement('div', ['card__title'], front);
-    frontTitle.innerText = title; 
-    if (isMenu)
-      frontTitle.classList.add('card__title_category');     
-  } 
+    frontTitle.innerText = title;
+    if (isMenu) frontTitle.classList.add('card__title_category');
+  }
   if (!playMode) {
     const back = createElement('div', ['card__side', 'card__side_back'], card);
     const back_img = createElement('img', ['card__image'], back);
@@ -91,8 +85,7 @@ function renderCard(title, title_back, img, playMode = false, isMenu = false) {
     back_img.setAttribute('alt', title_back);
     const backTitle = createElement('div', ['card__title'], back);
     backTitle.innerText = title_back;
-  } 
-  else {
+  } else {
     const back = createElement('div', ['card__side', 'card__side_back'], card);
   }
   return el;

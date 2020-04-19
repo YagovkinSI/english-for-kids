@@ -7,8 +7,8 @@
     "pack": "webpack --watch",
     "style": "sass --watch sass/main.scss dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src/js",
-    "lint:fix": "eslint ./src/js --fix"
+    "lint": "eslint ./js",
+    "lint:fix": "eslint ./js --fix"
   },
   "repository": {
     "type": "git",

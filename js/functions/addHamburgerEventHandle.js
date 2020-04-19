@@ -1,4 +1,4 @@
-import sidebarMove from "./sidebarMove.js";
+import sidebarMove from './sidebarMove.js';
 
 const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.sidebar');
